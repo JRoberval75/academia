@@ -13,7 +13,8 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Listagem />} />
-        <Route path="/sobre" element={<Sobre />}>
+        <Route path="/sobre">
+          <Route path=":sobreId" element={<Sobre />} />
         </Route>
       </Routes>
     </BrowserRouter>
