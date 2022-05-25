@@ -1,4 +1,5 @@
 import Score from "components/Score";
+import { Link } from "react-router-dom";
 
 
 function Carde() {
@@ -17,7 +18,9 @@ function Carde() {
             <div className="dsmovie-card-bottom-container">
                 <h3>{movie.title}</h3>
                 <Score />
-                <div className="btn btn-primary dsmovie-btn">Avaliar</div>
+                <Link to={`/sobre/${movie.id}`}>
+                    <div className="btn btn-primary dsmovie-btn">Avaliar</div>
+                </Link>
             </div>
         </div>
     );
