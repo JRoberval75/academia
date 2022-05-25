@@ -18,7 +18,7 @@ function Carde() {
             <div className="dsmovie-card-bottom-container">
                 <h3>{movie.title}</h3>
                 <Score />
-                <Link to={`/sobre/${movie.id}`}>
+                <Link to={`/avalicao/${movie.id}`}>
                     <div className="btn btn-primary dsmovie-btn">Avaliar</div>
                 </Link>
             </div>
